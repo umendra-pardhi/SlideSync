@@ -1,6 +1,7 @@
 package com.slide.sync;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -53,14 +54,9 @@ public class MainActivity extends AppCompatActivity {
         helpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                if(socket==null){
-//                    connectionStatus.setText("Please, Connect to server first!");
-//                }else {
-                    Dialog d = new Dialog(MainActivity.this);
-                    d.setTitle("help");
 
-                    d.show();
-//                }
+                Intent i = new Intent(getApplicationContext(), HelpActivity.class);
+                startActivity(i);
             }
         });
         // Set up the connect button

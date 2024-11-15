@@ -1,0 +1,94 @@
+$font-dark: #123769;
+$font-grey: #6a6f77;
+$font-grey-1: #666b6d;
+$font-blue: #5178e8;
+
+$color-green: #4defa1;
+$color-green-1: #00d8ab;
+$color-green-2: #81dfff;
+
+$color-red: #ff3759;
+$color-pink: #ff93f2;
+$color-pink-rgba-1: #ff93f2;
+$color-pink-1: #efb2f7;
+
+$color-blue: #6ea5ef;
+$color-blue-1: #88b6fe;
+
+$color-grey: #cad1d4;
+$color-grey-1: #aab0b8;
+$color-grey-2: #e1e1ec;
+$color-grey-3: #e3e3ed;
+
+$color-purple-1: #ac9dfc;
+
+:root {
+    --gradient-red: #fd4f8e;
+    --gradient-red-rgb: rgb(253, 79, 142);
+    --gradient-red-rgba: rgb(253, 79, 142, 1);
+    --gradient-red-rgba-4: rgb(253, 79, 142, .4);
+    --gradient-red-rgba-2: rgb(253, 79, 142, .2);
+
+    --gradient-red-1: #8e8bf5;
+    --gradient-red-1-rgba-4: rgb(142,139,245, .4);
+    --gradient-red-1-rgba-2: rgb(142,139,245, .2);
+    --gradient-red-1-rgba-1: rgb(142,139,245, .1);
+
+    --red-1: #f5507c;
+    --red-2: #fa646e;
+    --red-3: #ff707f;
+
+    --drop-shadow-red: #980040;
+    --drop-shadow-red-rgba-4: rgba(152, 0, 64, .4);
+
+    --drop-shadow-red-1: #c52989;
+    --drop-shadow-red-1-rgba-2: rgba(197, 41, 137, .2);
+
+    --gradient-purple: #6030a0;
+    --gradient-purple-rgba: rgba(96, 48, 160, 1);
+    --gradient-purple-rgba-4: rgba(96, 48, 160, .4);
+    --gradient-purple-rgba-2: rgba(96, 48, 160, .2);
+
+    --purple-1: #881188;
+    --purple-2: #831f8f;
+    --purple-3: #db4295;
+    --purple-4: #77339e;
+
+    --gradient-purple-1: #b70e7f;
+    --gradient-purple-1-rgba: rgba(183, 14, 127, 1);
+    --gradient-purple-1-rgba-4: rgba(183, 14, 127,.4);
+    --gradient-purple-1-rgba-2: rgba(183, 14, 127,.2);
+
+    --purple-drop-shadow: #531d95;
+    --purple-drop-shadow-rgba-1: rgba(83, 29, 149, .1);
+
+    --blue: #0072ff;
+    --blue-rgba-4: rgba(0,114,255,.4);
+    --blue-rgba-2: rgba(0,114,255,.2);
+    
+    --gradient-orange: #ffab65;
+    --gradient-orange-rgba: rgba(255, 171, 101, 1);
+    --gradient-orange-rgba-4: rgba(255, 171, 101,.4);
+    --gradient-orange-rgba-2: rgba(255, 171, 101,.2);
+
+    --orange-1: #ff7560;
+    --orange-2: #ffa667;
+
+    --orange-drop-shadow: #ff9a47;
+    --orange-drop-shadow-rgba-2: rgba(255, 154, 71, .2);
+
+    --orange-drop-shadow-1: #ff5b73;
+    --orange-drop-shadow-1-rgba-2: rgba(255, 91, 115, .2);
+
+    --gradient-orange-1: #ff93f2;
+    --gradient-orange-1-rgba: rgba(255,147,242, 1);
+    --gradient-orange-1-rgba-4: rgba(255,147,242,.4);
+    --gradient-orange-1-rgba-2: rgba(255,147,242,.2);
+
+    --pink: #ff56ea;
+    --pink-rgba-1: rgba(255, 86, 234, .1);
+
+    --pink-1: #ff92f2;
+
+    --border-width: .3rem;
+}

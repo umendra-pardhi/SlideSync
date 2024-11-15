@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="ZcOlKZw_IGggHy8RSxZxY-pT6NObUy9ybsv3FidcAqk" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="copyright" content="SlideSync, https://slidesync.web.app/">
+    <meta name="description" content="Introducing SlideSync – your smart remote for controlling PowerPoint presentations! With SlideSync, you can easily navigate slides on your PC using your Android device, all through a seamless Wi-Fi connection. ">
+  
+    <meta property="og:url" content="https://slidesync.web.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SlideSync: Present Freely – Control Slides Remotely!">
+    <meta property="og:description" content="Introducing SlideSync – your smart remote for controlling PowerPoint presentations! With SlideSync, you can easily navigate slides on your PC using your Android device, all through a seamless Wi-Fi connection. ">
+    <meta property="og:image" content="https://slidesync.web.app/assets/images/slidesync-card.png">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://slidesync.web.app/">
+    <meta property="twitter:url" content="https://slidesync.web.app/">
+    <meta name="twitter:title" content="SlideSync: Present Freely – Control Slides Remotely!">
+    <meta name="twitter:description" content="Introducing SlideSync – your smart remote for controlling PowerPoint presentations! With SlideSync, you can easily navigate slides on your PC using your Android device, all through a seamless Wi-Fi connection. ">
+    <meta name="twitter:image" content="https://slidesync.web.app/assets/images/slidesync-card.png">
+  
+
+    <title>SlideSync: Present Freely – Control Slides Remotely!</title>
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon.svg">
+
+    <!--stylesheets-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/overlay-scrollbars.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .feature-section-image .image {
+            width: 270px;
+        }
+        .navigation-logo {
+            width: 25%;
+        }
+        .navigation-logo img{
+            width: 100%;
+        }
+        /* .hero-image .phone{
+           border-radius: 40px;
+        } */
+
+        .hero-content h1{
+            font-family: "Teko", sans-serif;
+        }
+
+        .main-heading h3{
+            font-family: "Teko", sans-serif;
+        }
+
+        #result{
+            font-size: 14px;
+    
+        }
+    
+
+.tab-content>.active {
+    z-index: 10000;
+}
+.navigation-wrapper{
+    z-index: 20000;
+}
+.preloader{
+    z-index: 20002;
+}
+        @media (max-width: 575px) {
+            .navigation-logo {
+            width: 70%;
+        }
+
+        /* .hero-image .phone{
+           border-radius: 20px;
+        } */
+        /* .screen-section{
+            margin-top: 15rem;
+        } */
+
+
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="main-wrapper">
+
+    <!--
+    preloader - start
+    -->
+    <div class="preloader">
+        <div class="preloader-wrapper">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+                <g class="pre load6">
+                    <path fill="#1B1A1C" d="M124.5,57L124.5,57c0,3.9-3.1,7-7,7h-36c-3.9,0-7-3.1-7-7v0c0-3.9,3.1-7,7-7h36
+                    C121.4,50,124.5,53.1,124.5,57z"></path>
+                    <path fill="#1B1A1C" d="M147.7,86.9L147.7,86.9c-2.7,2.7-7.2,2.7-9.9,0l-25.5-25.5c-2.7-2.7-2.7-7.2,0-9.9l0,0
+                    c2.7-2.7,7.2-2.7,9.9,0L147.7,77C150.5,79.8,150.5,84.2,147.7,86.9z"></path>
+                    <path fill="#1B1A1C" d="M143,74.5L143,74.5c3.9,0,7,3.1,7,7v36c0,3.9-3.1,7-7,7l0,0c-3.9,0-7-3.1-7-7v-36
+                    C136,77.6,139.1,74.5,143,74.5z"></path>
+                    <path fill="#1B1A1C" d="M148.4,112.4L148.4,112.4c2.7,2.7,2.7,7.2,0,9.9L123,147.7c-2.7,2.7-7.2,2.7-9.9,0h0c-2.7-2.7-2.7-7.2,0-9.9
+                    l25.5-25.5C141.3,109.6,145.7,109.6,148.4,112.4z"></path>
+                    <path fill="#1B1A1C" d="M125.5,143L125.5,143c0,3.9-3.1,7-7,7h-36c-3.9,0-7-3.1-7-7l0,0c0-3.9,3.1-7,7-7h36 C122.4,136,125.5,139.1,125.5,143z"></path>
+                    <path fill="#1B1A1C" d="M52.3,113.1L52.3,113.1c2.7-2.7,7.2-2.7,9.9,0l25.5,25.5c2.7,2.7,2.7,7.2,0,9.9h0c-2.7,2.7-7.2,2.7-9.9,0
+                    L52.3,123C49.5,120.2,49.5,115.8,52.3,113.1z"></path>
+                    <path fill="#1B1A1C" d="M57,75.5L57,75.5c3.9,0,7,3.1,7,7v36c0,3.9-3.1,7-7,7h0c-3.9,0-7-3.1-7-7v-36C50,78.6,53.1,75.5,57,75.5z"></path>
+                    <path fill="#1B1A1C" d="M86.9,52.3L86.9,52.3c2.7,2.7,2.7,7.2,0,9.9L61.5,87.6c-2.7,2.7-7.2,2.7-9.9,0l0,0c-2.7-2.7-2.7-7.2,0-9.9
+                    L77,52.3C79.8,49.5,84.2,49.5,86.9,52.3z"></path>
+                </g>
+                </svg>
+        </div>
+    </div>
+    <!--
+    preloader - end
+    -->
+
+    <!--
+    navigation - start
+    -->
+    <div class="navigation">
+        <div class="navigation-wrapper">
+            <div class="container">
+                <div class="navigation-inner">
+                    <div class="navigation-logo">
+                        <a href="/">
+                            <img src="assets/images/slidesync_h_logo.svg" alt="orions-logo">
+                        </a>
+                    </div>
+                    <div class="navigation-menu">
+                        <div class="mobile-header">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/slidesync_h_logo.svg" width="200px" alt="image">
+                                </a>
+                            </div>
+                            <ul>
+                                <li class="close-button">
+                                    <i class="fas fa-times"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="parent">
+                            
+                            <li>
+                                <a href="#features" class="link-underline link-underline-1">
+                                    <span>Features</span>
+                                </a>
+                            </li>
+                            <li class="has-child">
+                                <a href="#" class="link-underline link-underline-1">
+                                    <span>How it works</span>
+                                </a>
+                                <div class="child">
+                                    <ul>
+                                        <li>
+                                            <a href="#video-guide" class="link-underline">
+                                                <span>Video Guide</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#visual-guide" class="link-underline">
+                                                <span>Visual Guide</span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#download" class="link-underline link-underline-1">
+                                    <span>Download</span>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="#feedback" class="link-underline link-underline-1">
+                                    <span>Feedback</span>
+                                </a>
+                    
+                            </li> -->
+
+                            
+                        </ul>
+                        <div class="social">
+                            <h6>Follow</h6>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="background-pattern">
+                            <div class="background-pattern-img background-loop" style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                            <div class="background-pattern-gradient"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-bar">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    navigation - end
+    -->
+
+    <!--
+    hero 1 - start
+    -->
+    <div class="hero hero-1 feature-section feature-section-0">
+        <div class="hero-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-0 order-lg-1 col-10 offset-1 order-2">
+                        <div class="hero-content">
+                            <h1 class="c-dark">Present Freely – Control Slides Remotely!</h1>
+                            <p class="large c-grey">Your all-in-one solution to control PowerPoint presentations from your Android device.</p>
+                            <div class="download-button-group">
+                                <a href="#download" class="download-button download-button-google">
+                                    <div class="download-button-inner c-white">
+                                        <div class="download-button-icon">
+                                            <i class="fab fa-android"></i>
+                                        </div>
+                                        <div class="download-button-content">
+                                            <h5 class="upper ls-1">download app for</h5>
+                                            <h3 class="ls-2">Android</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#download" class="download-button download-button-apple">
+                                    <div class="download-button-inner c-white">
+                                        <div class="download-button-icon">
+                                            <i class="fab fa-microsoft"></i>
+                                        </div>
+                                        <div class="download-button-content">
+                                            <h5 class="upper ls-1">download server for</h5>
+                                            <h3 class="ls-2">PC</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 order-lg-2 col-10 offset-1 order-1">
+                        <div class="hero-image">
+                            <div class="feature-section-image">
+                                <img src="assets/images/present_man.png" class="image" alt="image">
+                                <img src="assets/images/mockup/mockup-client.svg" class="phone" alt="phone" width="300px" >
+                                <div class="background-pattern background-pattern-radius">
+                                    <div class="background-pattern-img background-loop" style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                                    <div class="background-pattern-gradient"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--
+    hero 1 - end
+    -->
+
+    <!--
+    app features wide section - start
+    -->
+    <div id="features" class="app-feature app-feature-1">
+        <div class="app-feature-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 offset-lg-0 col-10 offset-1">
+                        <div class="section-heading center width-64">
+                            <div class="sub-heading c-purple upper ls-1">
+                                <i class="las la-cog"></i>
+                                <h5>app features</h5>
+                            </div>
+                            <div class="main-heading c-dark">
+                                <h3>All the Features You Need to Present with Ease!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 gy-5">
+                    <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
+                        <div class="app-feature-single app-feature-single-2">
+                            <div class="app-feature-single-wrapper">
+                                <a href="#" class="icon">
+                                    <i class="las la-comments"></i>
+                                </a>
+                                <a href="#">
+                                    <h3 class="c-dark">Easy setup with a simple interface</h3>
+                                </a>
+                                <p class="c-grey">Get started fast with a straightforward design that anyone can use.</p>
+                            </div>
+              
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
+                        <div class="app-feature-single app-feature-single-2">
+                            <div class="app-feature-single-wrapper">
+                                <a href="#" class="icon">
+                                    <i class="las la-volume-up"></i>
+                                </a>
+                                <a href="#">
+                                    <h3 class="c-dark">Control slides with volume buttons</h3>
+                                </a>
+                                <p class="c-grey">Use your phone’s volume buttons to move through slides smoothly.</p>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
+                        <div class="app-feature-single app-feature-single-2">
+                            <div class="app-feature-single-wrapper">
+                                <a href="#" class="icon">
+                                    <i class="las la-wifi"></i>
+                                </a>
+                                <a href="#">
+                                    <h3 class="c-dark">Easy Wi-Fi connectivity</h3>
+                                </a>
+                                <p class="c-grey">Connect your phone to your PC over the same Wi-Fi network for a quick setup.</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
+                        <div class="app-feature-single app-feature-single-2">
+                            <div class="app-feature-single-wrapper">
+                                <a href="#" class="icon">
+                                    <i class="lab la-slideshare"></i>
+                                </a>
+                                <a href="#">
+                                    <h3 class="c-dark">Real-time slide navigation</h3>
+                                </a>
+                                <p class="c-grey">Experience zero delays while moving between slides as you present.</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
+                        <div class="app-feature-single app-feature-single-2">
+                            <div class="app-feature-single-wrapper">
+                                <a href="#" class="icon">
+                                    <i class="las la-file-powerpoint"></i>
+                                </a>
+                                <a href="#">
+                                    <h3 class="c-dark">Compatible with all PowerPoint versions</h3>
+                                </a>
+                                <p class="c-grey">Works with any version of PowerPoint, so you never have to worry about compatibility.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
+                        <div class="app-feature-single app-feature-single-2">
+                            <div class="app-feature-single-wrapper">
+                                <a href="#" class="icon">
+                                    <i class="las la-gamepad"></i>
+                                </a>
+                                <a href="#">
+                                    <h3 class="c-dark">Rich Button Controls</h3>
+                                </a>
+                                <p class="c-grey">Quickly manage slides with intuitive, easy-to-use buttons for navigation and key actions.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    app features wide section - end
+    -->
+
+    <!--
+    video section - start
+    -->
+    <div id="video-guide" class="video-section">
+        <div class="video-section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 offset-lg-1 order-lg-1 col-10 offset-1 order-2">
+                        <div class="video-section-content">
+                            <div class="section-heading section-heading-1 center-responsive c-white">
+                                <div class="sub-heading upper ls-1">
+                                    <i class="las la-video"></i>
+                                    <h5>Video Tutorial</h5>
+                                </div>
+                                <div class="main-heading">
+                                    <h1>How it Works: Step-by-step Guide</h1>
+                                </div>
+                            </div>
+
+                            <!-- <a href="contact.html" class="button button-1">
+                                <div class="button-inner">
+                                    <div class="button-content">
+                                        <h4>Get Started</h4>
+                                    </div>
+                                </div>
+                            </a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 order-lg-2 order-1">
+                        <div class="video-section-video">
+                            <figure>
+                                <img class="drop-shadow-1" src="assets/images/working/slidesync-video.png" alt="image">
+                                
+                                <div class="play">
+                                    <a href="https://youtu.be/GtQeKSICPXU" class="glightbox">
+                                        <i class="la la-play"></i>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-pattern background-pattern-radius drop-shadow-1">
+                    <div class="background-pattern-img background-loop" style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                    <div class="background-pattern-gradient"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    video section - end
+    -->
+    
+    
+
+<!--
+    tabs section - start
+    -->
+    <div id="visual-guide" class="tab-section">
+        <div class="tab-section-wrapper">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                        <div class="sub-heading c-purple upper ls-1">
+                            <i class="las la-info-circle"></i>
+                            <h5>How it Works: step-by-step guide</h5>
+                        </div>
+                        <div class="nav tab-nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <!--
+                            button 1 - start
+                            -->
+                            <button 
+                            class="nav-link active" 
+                            id="tab-button-1" 
+                            data-bs-toggle="pill" 
+                            data-bs-target="#tab-pane-1" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="tab-pane-1" 
+                            aria-selected="true">
+                                <span>
+                                    <i class="las la-file-download"></i>
+                                    <span class="text">Download SlideSync</span>
+                                </span>
+                            </button>
+                            <!--
+                            button 1 - end
+                            -->
+                            <!--
+                            button 2 - start
+                            -->
+                            <button 
+                            class="nav-link" 
+                            id="tab-button-2" 
+                            data-bs-toggle="pill" 
+                            data-bs-target="#tab-pane-2" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="tab-pane-2" 
+                            aria-selected="false">
+                                <span>
+                                    <i class="las la-wifi"></i>
+                                    <span class="text">Wi-Fi Connection</span>
+                                </span>
+                            </button>
+                            <!--
+                            button 2 - end
+                            -->
+                            <!--
+                            button 3 - start
+                            -->
+                            <button 
+                            class="nav-link" 
+                            id="tab-button-3" 
+                            data-bs-toggle="pill" 
+                            data-bs-target="#tab-pane-3" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="tab-pane-3" 
+                            aria-selected="false">
+                                <span>
+                                    <i class="las la-hourglass-start"></i>
+                                    <span class="text">Start SlideSync Server</span>
+                                </span>
+                            </button>
+                            <!--
+                            button 3 - end
+                            -->
+                            <!--
+                            button 4 - start
+                            -->
+                            <button 
+                            class="nav-link" 
+                            id="tab-button-4" 
+                            data-bs-toggle="pill" 
+                            data-bs-target="#tab-pane-4" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="tab-pane-4" 
+                            aria-selected="false">
+                                <span>
+                                    <i class="las la-link"></i>
+                                    <span class="text">Connect to the PC Server</span>
+                                </span>
+                            </button>
+                            <!--
+                            button 4 - end
+                            -->
+                            <!--
+                            button 5 - start
+                            -->
+                            <button 
+                            class="nav-link" 
+                            id="tab-button-5" 
+                            data-bs-toggle="pill" 
+                            data-bs-target="#tab-pane-5" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="tab-pane-5" 
+                            aria-selected="false">
+                                <span>
+                                    <i class="las la-sync"></i>
+                                    <span class="text">Check Status</span>
+                                </span>
+                            </button>
+                            <!--
+                            button 5 - end
+                            -->
+                            <!--
+                            button 6 - start
+                            -->
+                            <button 
+                            class="nav-link" 
+                            id="tab-button-6" 
+                            data-bs-toggle="pill" 
+                            data-bs-target="#tab-pane-6" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="tab-pane-6" 
+                            aria-selected="false">
+                                <span>
+                                    <i class="las la-tv"></i>
+                                    <span class="text">Control Presentation</span>
+                                </span>
+                            </button>
+                            <!--
+                            button 6 - end
+                            -->
+                        </div>
+                    </div>
+                    <div class="col-lg-8 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <!--
+                            tab pane 1 - start
+                            -->
+                            <div 
+                            class="tab-pane active" 
+                            id="tab-pane-1" 
+                            role="tabpanel" 
+                            aria-labelledby="tab-button-1">
+                                <div class="tab-pane-wrapper c-grey">
+                                    <h2 class="c-dark">Download & Install SlideSync</h2>
+                                    <p class="paragraph-big">Download the SlideSync App for Android and the SlideSync Server for PC using the buttons below.</p>
+                                    
+                                    <div class="download-button-group">
+                                        <a href="https://github.com/umendra-pardhi/slide-sync-dist/raw/refs/heads/main/slidesync.apk" class="download-button download-button-google">
+                                            <div class="download-button-inner c-white">
+                                                <div class="download-button-icon">
+                                                    <i class="fab fa-android"></i>
+                                                </div>
+                                                <div class="download-button-content">
+                                                    <h5 class="upper ls-1">download SlideSync app for</h5>
+                                                    <h3 class="ls-2">Android</h3>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="https://github.com/umendra-pardhi/slide-sync-dist/raw/refs/heads/main/slidesyncsetup.exe" class="download-button download-button-apple">
+                                            <div class="download-button-inner c-white">
+                                                <div class="download-button-icon">
+                                                    <i class="fab fa-microsoft"></i>
+                                                </div>
+                                                <div class="download-button-content">
+                                                    <h5 class="upper ls-1">download SlideSync server for</h5>
+                                                    <h3 class="ls-2">PC</h3>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    
+                                    <p class="paragraph-big">After downloading, install both apps on your devices to get started.</p>
+                                   
+                                </div>
+                            </div>
+                            <!--
+                            tab pane 1 - end
+                            -->
+                            <!--
+                            tab pane 2 - start
+                            -->
+                            <div 
+                            class="tab-pane" 
+                            id="tab-pane-2" 
+                            role="tabpanel" 
+                            aria-labelledby="tab-button-2">
+                                <div class="tab-pane-wrapper c-grey">
+                                    <h2 class="c-dark">Wi-Fi Connection</h2>
+                                    <p class="paragraph-big">Connect your Android device and PC to the same Wi-Fi network. <br><br>Alternatively, you can use your mobile phone’s hotspot to connect both devices if Wi-Fi is unavailable</p>
+                                    <div class="pattern-image">
+                                        <div class="pattern-image-wrapper">
+                                            <img class="drop-shadow-1" src="assets/images/working/wifi_connection.png" alt="image">
+                                            <div class="background-pattern background-pattern-radius drop-shadow-1">
+                                                <div class="background-pattern-img background-loop" style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                                                <div class="background-pattern-gradient"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- <img class="drop-shadow-1" src="assets/images/working/wifi_connection.png" alt="image" style="border-radius: 10px;"> -->
+                                    
+                                </div>
+                            </div>
+                            <!--
+                            tab pane 2 - end
+                            -->
+                            <!--
+                            tab pane 3 - start
+                            -->
+                            <div 
+                            class="tab-pane" 
+                            id="tab-pane-3" 
+                            role="tabpanel" 
+                            aria-labelledby="tab-button-3">
+                                <div class="tab-pane-wrapper c-grey">
+                                    <h2 class="c-dark">Start SlideSync Server</h2>
+                                    <p class="paragraph-big">Open the PC app, click "Start Server," and note the IP address displayed.</p>
+
+                                    <!-- <img class="drop-shadow-1" src="assets/images/working/start_server.png" alt="image" style="border-radius: 10px;"> -->
+                                    <div class="pattern-image">
+                                        <div class="pattern-image-wrapper">
+                                            <img class="drop-shadow-1" src="assets/images/working/start_server.png" alt="image">
+                                            <div class="background-pattern background-pattern-radius drop-shadow-1">
+                                                <div class="background-pattern-img background-loop" style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                                                <div class="background-pattern-gradient"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!--
+                            tab pane 3 - end
+                            -->
+                            <!--
+                            tab pane 4 - start
+                            -->
+                            <div 
+                            class="tab-pane" 
+                            id="tab-pane-4" 
+                            role="tabpanel" 
+                            aria-labelledby="tab-button-4">
+                                <div class="tab-pane-wrapper c-grey">
+                                    <h2 class="c-dark">Connect to the PC Server</h2>
+                                    <p class="paragraph-big">In the Android app, enter the IP address, then tap the connect button.</p>
+                                    <!-- <img class="drop-shadow-1" src="assets/images/working/connect_to_server.png" alt="image" style="border-radius: 10px;"> -->
+                                    <div class="pattern-image">
+                                        <div class="pattern-image-wrapper">
+                                            <img class="drop-shadow-1" src="assets/images/working/connect_to_server.png" alt="image">
+                                            <div class="background-pattern background-pattern-radius drop-shadow-1">
+                                                <div class="background-pattern-img background-loop" style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                                                <div class="background-pattern-gradient"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <!--
+                            tab pane 4 - end
+                            -->
+                            <!--
+                            tab pane 5 - start
+                            -->
+                            <div 
+                            class="tab-pane" 
+                            id="tab-pane-5" 
+                            role="tabpanel" 
+                            aria-labelledby="tab-button-5">
+                                <div class="tab-pane-wrapper c-grey">
+                                    <h2 class="c-dark">Check Status</h2>
+                                    <p class="paragraph-big">Verify the connection status on both your phone and PC for confirmation.</p>
+                                    <!-- <img class="drop-shadow-1" src="assets/images/working/check_status.png" alt="image" width="70%" style="border-radius: 10px;"> -->
+                                    <div class="pattern-image">
+                                        <div class="pattern-image-wrapper">
+                                            <img class="drop-shadow-1" src="assets/images/working/check_status.png" alt="image">
+                                            <div class="background-pattern background-pattern-radius drop-shadow-1">
+                                                <div class="background-pattern-img background-loop" style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                                                <div class="background-pattern-gradient"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <!--
+                            tab pane 5 - end
+                            -->
+                            <!--
+                            tab pane 6 - start
+                            -->
+                            <div 
+                            class="tab-pane" 
+                            id="tab-pane-6" 
+                            role="tabpanel" 
+                            aria-labelledby="tab-button-6">
+                                <div class="tab-pane-wrapper c-grey">
+                                    <h2 class="c-dark">Control Your Presentation</h2>
+                                    <p class="paragraph-big">Use your phone to start and control your presentation:</p>
+                                    <h3 class="c-dark">Button Controls</h3>
+                                    <!-- <img class="drop-shadow-1" src="assets/images/working/button_controls.png" alt="image" width="70%" style="border-radius: 10px;"> -->
+                                    <div class="pattern-image">
+                                        <div class="pattern-image-wrapper">
+                                            <img class="drop-shadow-1" src="assets/images/working/button_controls.png" alt="image">
+                                            <div class="background-pattern background-pattern-radius drop-shadow-1">
+                                                <div class="background-pattern-img background-loop" style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                                                <div class="background-pattern-gradient"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                 
+                                    
+                                </div>
+                            </div>
+                            <!--
+                            tab pane 6 - end
+                            -->
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    tabs section - end
+    -->
+
+
+
+
+    <!--
+    screen section - start
+    -->
+    <div id="download" class="screen-section">
+        <div class="screen-section-wrapper">
+            <!--
+            screen section header - start
+            -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-0 col-10 offset-1">
+                        <div class="screen-section-header">
+                            <div class="section-heading center-responsive">
+                                <div class="sub-heading c-purple upper ls-1">
+                                    <i class="las la-cloud-download-alt"></i>
+                                    <h5>Download App</h5>
+                                </div>
+                                <div class="main-heading c-dark">
+                                    <h3>Get SlideSync Client for Android & SlideSync Server for PC.</h3>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-10 offset-1">
+                        <div class="screen-slider-navigation slider-navigation">
+                            <div class="screen-slider-navigation-prev">
+                                <i class="las la-long-arrow-alt-left"></i>
+                            </div>
+                            <div class="screen-slider-navigation-next">
+                                <i class="las la-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            screen section header - end
+            -->
+            <!--
+            screen section slider - start
+            -->
+            <div class="screen-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--
+                        screen slide - start
+                        -->
+                        <div class="swiper-slide">
+                            <div class="screen-slide">
+                                <figure>
+                                    <img src="assets/images/mockup/mockup-client.svg" alt="app-screen" style="border-radius: 30px;">
+                                </figure>
+                            </div>
+                        </div>
+                        <!--
+                        screen slide - end
+                        -->
+
+                        <!--
+                        screen slide - start
+                        -->
+                        <div class="swiper-slide">
+                            <div class="screen-slide">
+                                <figure>
+                                    <img src="assets/images/mockup/mockup-server.svg" alt="app-screen" style="border-radius: 30px;">
+                                </figure>
+                            </div>
+                        </div>
+                        <!--
+                        screen slide - end
+                        -->
+                      
+
+                    </div>
+                </div>
+            </div>
+            <!--
+            screen section slider - end
+            -->
+            <!--
+            screen section bottom - start
+            -->
+            <div class="screen-section-bottom">
+                <div class="screen-section-bottom-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-0 col-10 offset-1">
+                                <h1 class="c-white">Download for both Android and PC</h1>
+                                <h4 class="c-white">
+                                    <!-- <i class="fas fa-smile"></i> -->
+                                    <!-- 1K+ users and counting! -->
+                                </h4>
+                            </div>
+                            <div class="col-lg-4 offset-lg-0 col-10 offset-1">
+                                <div class="download-button-group download-button-1-group">
+                                    <a href="https://github.com/umendra-pardhi/slide-sync-dist/raw/refs/heads/main/slidesync.apk" class="download-button download-button-1 download-button-google">
+                                        <div class="download-button-inner">
+                                            <div class="download-button-icon c-orange">
+                                                <i class="fab fa-android"></i>
+                                            </div>
+                                            <div class="download-button-content">
+                                                <h5 class="c-grey upper ls-1">Download slidesync app</h5>
+                                                <h3 class="c-dark ls-2">Android</h3>        
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://github.com/umendra-pardhi/slide-sync-dist/raw/refs/heads/main/slidesyncsetup.exe" class="download-button download-button-1 download-button-apple">
+                                        <div class="download-button-inner">
+                                            <div class="download-button-icon c-red">
+                                                <i class="fab fa-microsoft"></i>
+                                            </div>
+                                            <div class="download-button-content">
+                                                <h5 class="c-grey upper ls-1">Download slidesync server</h5>
+                                                <h3 class="c-dark ls-2">PC</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            screen section bottom - end
+            -->            
+        </div>
+        <div class="background-pattern background-pattern-2">
+            <div class="background-pattern-img background-loop" style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+            <div class="background-pattern-gradient"></div>
+            <div class="background-pattern-bottom">
+                <div class="image" style="background-image: url(assets/images/patterns/pattern-2.jpg);"></div>
+            </div>
+        </div>
+    </div>
+    <!--
+    screen section - end
+    -->
+
+
+
+    <!--
+    cta section - start
+    -->
+    <!-- <div class="cta-section">
+        <div class="cta-section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                        <div class="section-heading center width-71">
+                            <div class="sub-heading c-purple upper ls-1">
+                                <i class="las la-cloud-download-alt"></i>
+                                <h5>Download SlideSync</h5>
+                            </div>
+                            <div class="main-heading c-dark">
+                                <h1>For both Android and PC.</h1>
+                            </div>
+                        </div>
+                        <div class="download-button-group">
+                            <a href="#" class="download-button download-button-google">
+                                <div class="download-button-inner c-white">
+                                    <div class="download-button-icon">
+                                        <i class="fab fa-google-play"></i>
+                                    </div>
+                                    <div class="download-button-content">
+                                        <h5 class="upper ls-1">get it on</h5>
+                                        <h3 class="ls-2">Google Play</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="download-button download-button-apple">
+                                <div class="download-button-inner c-white">
+                                    <div class="download-button-icon">
+                                        <i class="fab fa-apple"></i>
+                                    </div>
+                                    <div class="download-button-content">
+                                        <h5 class="upper ls-1">get it on</h5>
+                                        <h3 class="ls-2">Apple Store</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!--
+    cta section - end
+    -->
+
+      <!--
+    testimonial section - start
+    -->
+    <!-- <div id="feedback" class="testimonial-section">
+        <div class="testimonial-section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                        <div class="section-heading center width-55">
+                            <div class="sub-heading c-purple upper ls-1">
+                                <i class="las la-comments"></i>
+                                <h5>feedbacks</h5>
+                            </div>
+                            <div class="main-heading c-dark">
+                                <h1>What people are talking about.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="testimonial-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slide">
+                                        <div class="image">
+                                            <div class="image-wrapper">
+                                                <div class="image-inner">
+                                                    <img src="assets/images/testimonial-slide-img-2.png" alt="testimony-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <p>“This app is wonderful dry male ceepeth good them their in which to days two deep has yielding throw darkness bring likeness fifth by darkness make face saw has under heaven forth saw there without lights app stars for him replenish fowl creature.”</p>
+                                            <h5>— Jack William</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slide">
+                                        <div class="image">
+                                            <div class="image-wrapper">
+                                                <div class="image-inner">
+                                                    <img src="assets/images/testimonial-slide-img-1.png" alt="testimony-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <p>“This app is wonderful dry male ceepeth good them their in which to days two deep has yielding throw darkness bring likeness fifth by darkness make face saw has under heaven forth saw there without lights app stars for him replenish fowl creature.”</p>
+                                            <h5>— Jack William</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-slide">
+                                        <div class="image">
+                                            <div class="image-wrapper">
+                                                <div class="image-inner">
+                                                    <img src="assets/images/testimonial-slide-img-3.png" alt="testimony-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <p>“This app is wonderful dry male ceepeth good them their in which to days two deep has yielding throw darkness bring likeness fifth by darkness make face saw has under heaven forth saw there without lights app stars for him replenish fowl creature.”</p>
+                                            <h5>— Jack William</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!--
+    testimonial section - end
+    -->
+
+
+    <!--
+    contact form section - start
+    -->
+    <div class="contact-form-section">
+        <div class="contact-form-section-wrapper">
+            <div class="container">
+                <div class="row gx-5 contact-form-section-row justify-content-center">
+                    <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                        <!--
+                        contact form - start
+                        -->
+                        <div class="contact-form drop-shadow-2">
+                            <div class="contact-form-wrapper">
+                                <div class="section-heading section-heading-2 center">
+                                    <div class="sub-heading c-purple upper ls-1">
+                                        <i class="las la-comments"></i>
+                                        <h5>Give Feedback</h5>
+                                    </div>
+                                    <div class="main-heading c-dark">
+                                        <h1>Write message</h1>
+                                    </div>
+                                </div>
+                                <form method="POST" id="form">
+                                    <input type="hidden" name="access_key" value="94d89db2-c2fc-44cc-b8ee-ddbe9169388d">
+                                    <div class="form-floating">
+                                        <input class="input form-control" id="name-field" type="text" name="name" placeholder="Full name" required >
+                                        <label for="name-field">Full name</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input class="input form-control" id="email-field" type="email" name="email" placeholder="Email address" required>
+                                        <label for="email-field">Email address</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input class="input form-control" id="message-field" type="text" name="message" placeholder="Message" required>
+                                        <label for="message-field">Message</label>
+                                    </div>
+                                  
+                                    <button type="submit" class="button button-3">
+                                        <span class="button-inner">
+                                            <span class="button-content">
+                                                <span class="text">Submit</span>
+                                            </span>
+                                        </span>
+                                    </button>
+
+                                    <div id="result" class="mt-4 p-2" ></div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--
+                        contact form - end
+                        -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    contact form section - end
+    -->
+
+    <!--
+    footer - start
+    -->
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                        <div class="footer-row">
+                            <div class="footer-detail">
+                                <a href="#">
+                                    <img src="assets/images/slidesync_h_logo.svg" alt="footer-logo" class="w-100">
+                                </a>
+                                <p class="c-grey-1">SlideSync lets you control PowerPoint slides from your Android phone via Wi-Fi. With an Android app to send commands and a PC app to receive them, you can navigate slides easily, making presentations hassle-free.</p>
+                                <div class="links">
+                                    <a class="link-underline" href="mailto:slidesyncteam@gmail.com">
+                                        <span>slidesyncteam@gmail.com</span>
+                                    </a>
+                                    <a class="link-underline" href="tel:+91">
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer-list footer-social social-gradient">
+                                <h6>Follow</h6>
+                                <ul>
+                                    <li class="twitter">
+                                        <a href="#" class="link-underline">
+                                            <i class="fab fa-twitter"></i>
+                                            <span>Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li class="facebook">
+                                        <a href="#" class="link-underline">
+                                            <i class="fab fa-facebook"></i>
+                                            <span>Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#" class="link-underline">
+                                            <i class="fab fa-linkedin-in"></i>
+                                            <span>Linkedin</span>
+                                        </a>
+                                    </li>
+                                    <li class="youtube">
+                                        <a href="#" class="link-underline">
+                                            <i class="fab fa-youtube"></i>
+                                            <span>Youtube</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-list">
+                                <h6>Menu</h6>
+                                <ul>
+                                    <li>
+                                        <a href="#features" class="link-underline">
+                                            <span>Features</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#video-guide" class="link-underline">
+                                            <span>How it Works</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#download" class="link-underline">
+                                            <span>Download</span>
+                                        </a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#feedback" class="link-underline">
+                                            <span>Feedback</span>
+                                        </a>
+                                    </li> -->
+                                    
+                                </ul>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                        <div class="footer-copyright c-grey-1">
+                            <h6>&copy; SLIDESYNC | DEVELOPED BY UMENDRA PARDHI</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-pattern" style="background-image: url(assets/images/patterns/pattern-1.jpg)"></div>
+        </div>
+    </footer>
+    <!--
+    footer - end
+    -->
+
+    </div>
+
+    <!--
+    scripts
+    -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/overlay-scrollbars.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/mail.js"></script>
+</body>
+</html>
